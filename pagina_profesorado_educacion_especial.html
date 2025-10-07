@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profesorado en Educación Especial - Institución</title>
+  <meta name="description" content="Página institucional del Profesorado en Educación Especial: misión, objetivos, perfil del egresado, plan de estudios y contacto." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600;800&family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --primary:#006a8e;
+      --accent:#c62828; /* rojo para acentos */
+      --muted:#6b6b6b;
+      --bg:linear-gradient(180deg,#e6f7fb 0%, #f7fff9 100%);
+      --card:#ffffffcc;
+      --radius:14px;
+      --maxw:1100px;
+      --pad:20px;
+      font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color:#123;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);-webkit-font-smoothing:antialiased}
+    header{background:rgba(255,255,255,0.6);backdrop-filter: blur(6px);border-bottom:1px solid #e6eef0}
+    .container{max-width:var(--maxw);margin:0 auto;padding:0 16px}
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:54px;height:54px;border-radius:10px;background:var(--primary);display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-family:'Rubik',sans-serif}
+    nav ul{display:flex;gap:14px;list-style:none;margin:0;padding:0}
+    nav a{color:var(--primary);text-decoration:none;font-weight:600}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:36px;align-items:center;padding:48px 0}
+    .hero h1{font-family:'Rubik',sans-serif;font-size:34px;margin:0;color:var(--primary)}
+    .lead{color:var(--muted);margin-top:10px;line-height:1.5}
+    .cta{margin-top:18px}
+    .btn{display:inline-block;padding:10px 18px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:700}
+    .card{background:var(--card);padding:20px;border-radius:var(--radius);box-shadow:0 6px 18px rgba(16,40,60,0.06)}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:28px 0}
+    .features h4{margin:0 0 8px 0}
+    section{padding:28px 0}
+    .section-title{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+    .section-title h2{margin:0;font-family:'Rubik',sans-serif;color:var(--primary)}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    footer{padding:24px 0;color:var(--muted);border-top:1px solid #e6eef0}
+
+    /* responsive */
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .features{grid-template-columns:1fr;}
+      .grid-2{grid-template-columns:1fr}
+      nav ul{display:none}
+    }
+
+    /* small utilities */
+    .muted{color:var(--muted)}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#f1f7f8;font-weight:700;color:var(--primary)}
+    .faculty-list{display:flex;flex-direction:column;gap:12px}
+    .faculty-item{display:flex;gap:12px;align-items:center}
+    .avatar{width:64px;height:64px;border-radius:10px;background:#ddd;display:inline-flex;align-items:center;justify-content:center;font-weight:700;color:#666}
+    .objectives ol{padding-left:18px}
+    .contact-form label{display:block;margin-top:10px}
+    .contact-form input,.contact-form textarea{width:100%;padding:8px;border-radius:8px;border:1px solid #dcdcdc}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo">EE</div>
+        <div>
+          <div style="font-weight:800">Profesorado en Educación Especial</div>
+          <div class="muted" style="font-size:13px">Instituto Superior - Formación para la inclusión</div>
+        </div>
+      </div>
+      <nav aria-label="Navegación principal">
+        <ul>
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#objetivos">Objetivos</a></li>
+          <li><a href="#plan">Plan de estudios</a></li>
+          <li><a href="#docentes">Docentes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="pill">Carrera Oficial • Presencial / Modalidades mixtas</span>
+        <h1>Profesorado en Educación Especial</h1>
+        <p class="lead">Formamos profesionales docentes con competencias pedagógicas, socioafectivas y técnico-metodológicas para atender la diversidad funcional y social en contextos educativos formales e inclusivos.</p>
+        <div class="cta"><a class="btn" href="#contacto">Solicitar información</a></div>
+
+        <div class="features">
+          <div class="card">
+            <h4>Enfoque</h4>
+            <p class="muted">Atención a la diversidad, accesibilidad y diseño universal del aprendizaje.</p>
+          </div>
+          <div class="card">
+            <h4>Duración</h4>
+            <p class="muted">4 años (2400 horas reloj) con prácticas supervisadas.</p>
+          </div>
+          <div class="card">
+            <h4>Perfil</h4>
+            <p class="muted">Docentes capaces de diseñar adaptaciones curriculares y estrategias inclusivas.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" aria-hidden="false">
+        <h3 style="margin-top:0">Información rápida</h3>
+        <p><strong>Modalidad:</strong> Presencial / Semi-presencial</p>
+        <p><strong>Inicio:</strong> Marzo 2026</p>
+        <p><strong>Contacto:</strong> secretaria@instituto.edu</p>
+        <hr />
+        <h4 style="margin:8px 0">Misión</h4>
+        <p class="muted">Formar docentes especializados que promuevan la inclusión educativa, el respeto a los derechos y la autonomía de las personas con discapacidad.</p>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="section-title"><h2>Descripción general</h2></div>
+      <div class="card">
+        <p>El Profesorado en Educación Especial se orienta a la formación teórico-práctica de profesionales con sólidos conocimientos en diagnósticos pedagógicos, intervención educativa, diseño de proyectos y gestión de recursos para garantizar el derecho a la educación de las personas con discapacidades, temporales o permanentes. La propuesta curricular articula saberes científicos, didácticos y éticos, promoviendo el trabajo interdisciplinario y las prácticas supervisadas en instituciones educativas y servicios comunitarios.</p>
+      </div>
+    </section>
+
+    <section id="objetivos">
+      <div class="section-title"><h2>Objetivos de la carrera</h2></div>
+      <div class="grid-2">
+        <div class="card objectives">
+          <h4>Objetivos generales</h4>
+          <ol>
+            <li>Desarrollar competencias didácticas y metodológicas para la intervención en contextos de diversidad funcional.</li>
+            <li>Capacitar en el diseño y aplicación de adaptaciones curriculares y tecnologías de apoyo.</li>
+            <li>Promover una práctica reflexiva, ética y basada en evidencia.</li>
+          </ol>
+        </div>
+        <div class="card">
+          <h4>Perfil del egresado</h4>
+          <ul>
+            <li>Capacidad para diagnosticar necesidades educativas especiales y planificar estrategias pedagógicas.</li>
+            <li>Dominio de recursos de accesibilidad e inclusión educativa.</li>
+            <li>Habilidad para la gestión institucional y trabajo interdisciplinario.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="plan">
+      <div class="section-title"><h2>Plan de estudios (resumen)</h2></div>
+      <div class="card">
+        <p class="muted">La carrera se organiza en ejes teórico-prácticos: fundamentos en neurodesarrollo y psicología educativa, didáctica inclusiva, diagnóstico psicopedagógico, tecnología asistiva, prácticas profesionales, y seminarios de investigación aplicada.</p>
+        <h4>Asignaturas destacadas</h4>
+        <ul>
+          <li>Neuropsicología del aprendizaje</li>
+          <li>Didáctica adaptada y diseño curricular</li>
+          <li>Tecnologías de apoyo y accesibilidad</li>
+          <li>Prácticas supervisadas I, II y III</li>
+          <li>Seminario de Investigación y Proyecto final</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="docentes">
+      <div class="section-title"><h2>Equipo docente</h2></div>
+      <div class="card faculty-list">
+        <div class="faculty-item">
+          <div class="avatar">MA</div>
+          <div>
+            <div style="font-weight:700">Mg. María Álvarez</div>
+            <div class="muted">Coordinadora académica • Especialista en intervención temprana</div>
+          </div>
+        </div>
+        <div class="faculty-item">
+          <div class="avatar">JL</div>
+          <div>
+            <div style="font-weight:700">Dr. Juan López</div>
+            <div class="muted">Neuropsicólogo • Docente de diagnóstico psicopedagógico</div>
+          </div>
+        </div>
+        <div class="faculty-item">
+          <div class="avatar">SR</div>
+          <div>
+            <div style="font-weight:700">Lic. Sofía Rivas</div>
+            <div class="muted">Especialista en tecnologías de apoyo y accesibilidad</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="section-title"><h2>Contacto e inscripción</h2></div>
+      <div class="grid-2">
+        <div class="card">
+          <h4>Datos de contacto</h4>
+          <p>Email: <a href="mailto:secretaria@instituto.edu">secretaria@instituto.edu</a></p>
+          <p>Teléfono: +54 9 11 1234 5678</p>
+          <p>Dirección: Calle Falsa 123, Ciudad</p>
+          <p class="muted">Horarios de atención: Lunes a Viernes 9:00 - 17:00</p>
+        </div>
+        <div class="card">
+          <h4>Solicitar información</h4>
+          <form class="contact-form" onsubmit="event.preventDefault(); alert('Formulario simulado: los datos se enviarían al departamento de admisiones.');">
+            <label for="name">Nombre completo</label>
+            <input id="name" name="name" required />
+            <label for="email">Correo electrónico</label>
+            <input id="email" name="email" type="email" required />
+            <label for="message">Consulta</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <div style="margin-top:12px"><button class="btn" type="submit">Enviar consulta</button></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© <strong>Instituto Superior</strong> • Profesorado en Educación Especial</div>
+        <div class="muted">Política de privacidad • Términos • Accesibilidad</div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', (e) => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if(target){ e.preventDefault(); target.scrollIntoView({behavior:'smooth',block:'start'}); }
+      });
+    });
+  </script>
+</body>
+</html>
